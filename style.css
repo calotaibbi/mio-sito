@@ -1,0 +1,697 @@
+/*home*/
+header, body{
+margin:0;
+padding:0;
+font-family: "verdana", Times, serif;
+display: block;
+}
+
+
+header{
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color:#fff;
+  z-index: 10;
+  position: fixed;
+}
+
+
+
+.logoo{
+  float: left;
+  height: 80px;
+  width: 200px;
+}
+
+
+.davanti{
+  float: left;
+  height: 80px;
+  width: 100px;
+  overflow: hidden;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform .3s linear;
+}
+
+.indietro{
+  float: left;
+  height: 80px;
+  width: 200px;
+  overflow: hidden;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform .3s linear;
+  padding-left: 75px;
+}
+
+.indietro{
+transform: perspective(600px) rotateX(180deg);
+
+}
+
+.davanti{
+transform: perspective(600px) rotateX(0deg);
+
+}
+
+
+.logoo:hover > .indietro{
+transform: perspective(600px) rotateX(0deg);
+}
+
+
+.logo2{
+  width: 70px;
+  height: 90px;
+  display: run-in;
+  padding-bottom: 20px;
+}
+
+.logo1{
+  width: 70px;
+  height: 90px;
+  display: run-in;
+}
+
+
+.navBar,
+.navBar__item{
+  display: inline-block;
+  list-style-type: none;
+  line-height: 53px;
+  float: right;
+  margin-right: 40px;
+  margin-left: 10px;
+}
+
+.navBar__item:hover{
+  border-bottom: solid #0aa311 1px;
+}
+
+.page{
+  color: #0aa311;
+}
+
+.navBar__item a{
+  text-decoration: none;
+  color: Black;
+  font-family: 'Lato', sans-serif;
+}
+
+.navBar__item a:hover{
+  font-weight: bold;
+}
+
+.containerFluid{
+  position: absolute;
+  width: 100%;
+  padding-top: 85px;
+}
+
+.cover{
+  position: absolute;
+  width: 100%;
+  height: 852px;
+  background-image: url('cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+
+}
+
+.cover__title{
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  text-transform: uppercase;
+  top: 140px;
+  left: 290px;
+  font-size: 80px;
+  color: #fff;
+  z-index: 10;
+}
+
+.cover_sub_title{
+  font-family: 'Lato', sans-serif;
+  margin-top: 10px;
+  color: #fff;
+  position:absolute;
+  top: 330px;
+  left: 290px;
+  font-size: 50px;
+  z-index: 10;
+}
+
+
+
+
+/*Servizzi*/
+
+
+
+.collezione{
+font-family: 'Ubuntu', sans-serif;
+position: absolute;
+display: inline-grid;
+background-color: #0aa311;
+height: 400px;
+width:100%;
+left: 0px;
+top: 480px;
+background-image: url('cover.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+
+.sfumatura{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(10, 163, 17, 0.4);
+}
+
+
+.prodotto1{
+position: absolute;
+display: block;
+background-color: none;
+height: 300px;
+width:300px;
+left: 250px;
+top: 50px;
+}
+
+.back{
+  background-color: rgba(255,255,255,1) ;
+  transform: perspective(600px) rotateY(180deg);
+  font-size: 13px;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 50px 20px;
+  border: solid #000 0.3px;
+}
+
+.front{
+  transform: perspective(600px) rotateY(0deg);
+  background-color: #fff;
+  border-radius: 20px 50px;
+  border: solid #000 0.5px;
+}
+
+.front img{
+  border-radius: 0px 0px 20px 50px;
+}
+
+
+.front,.back{
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform .5s linear;
+}
+
+.prodotto1:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+.prodotto1:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.prodotto2:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+.prodotto2:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.prodotto3:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+.prodotto3:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.prodotto4:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+.prodotto4:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+
+.prodotto1 h1{
+padding-left: 20px;
+}
+
+.prodotto2{
+position: absolute;
+display: block;
+background-color: none;
+height: 300px;
+width:300px;
+left: 585px;
+top: 50px;
+
+}
+
+.prodotto2 h1{
+padding-left: 20px;
+}
+
+.prodotto3{
+position: absolute;
+display: block;
+background-color: none;
+height: 300px;
+width:300px;
+left: 925px;
+top: 50px;
+
+}
+
+.prodotto3 h1{
+padding-left: 20px;
+}
+
+.prodotto4{
+position: absolute;
+display: block;
+background-color: none;
+height: 300px;
+width:300px;
+left: 1250px;
+top: 50px;
+
+}
+
+.prodotto4 h1{
+padding-left: 20px;
+}
+
+
+.immagine-prodotto img{
+width:100%;
+height: 190px;
+}
+
+
+.titolo{
+  display:block;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  left: 680px;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  font-size: 70px;
+  color: #cfcfcf;
+}
+
+.guida{
+  display:block;
+  position: absolute;
+  z-index: 1;
+  top: 200px;
+  left: 610px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  color: #111;
+}
+
+
+.form{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 400px;
+  top: 1000px;
+  background-color: rgba(10, 163, 17, 1);
+}
+
+.form h1{
+  display: block;
+  position: absolute;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  left: 630px;
+  color: #cfcfcf;
+}
+
+
+
+
+.input-nome{
+  display: block;
+  position: absolute;
+  left: 730px;
+  top: 200px;
+  width: 450px;
+}
+
+.input-nome input{
+width: 100%;
+height: 20px;
+color: #595f6e;
+padding-top: 20px;
+padding-left: 10px;
+border: none;
+border-bottom: solid #000 1px;
+}
+
+.input-nome label{
+  display: block;
+  position: absolute;
+  top: 0px;
+  padding-left:10px;
+}
+
+
+
+.input-emale{
+  display: block;
+  position: absolute;
+  left: 730px;
+  top: 250px;
+  width: 450px;
+}
+
+.input-emale input{
+width: 100%;
+height: 20px;
+color: #595f6e;
+padding-top: 20px;
+padding-left: 10px;
+border: none;
+border-bottom: solid #000 1px;
+}
+
+.input-emale label{
+  display: block;
+  position: absolute;
+  top: 0px;
+  padding-left:10px;
+}
+
+
+
+
+.input-categoria{
+  display: block;
+  position: absolute;
+  left: 730px;
+  top: 300px;
+  width: 460px;
+}
+
+.input-categoria select{
+width: 100%;
+height: 40px;
+color: #595f6e;
+padding-top: 20px;
+padding-left: 5px;
+border: none;
+border-bottom: solid #000 1px;
+}
+
+.input-categoria label{
+  display: block;
+  position: absolute;
+  top: 0px;
+  padding-left:10px;
+}
+
+
+
+
+.input-testo{
+  display: block;
+  position: absolute;
+  left: 730px;
+  top: 350px;
+  width: 450px;
+
+}
+
+.input-testo input{
+width: 100%;
+height: 80px;
+color: #595f6e;
+padding-left: 10px;
+border: none;
+border-bottom: solid #000 1px;
+}
+
+.input-testo label{
+  display: block;
+  position: absolute;
+  top: 0px;
+  padding-left:10px;
+}
+
+
+
+
+.input-testo button{
+  display: block;
+  position: absolute;
+  width: 104%;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 150px;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 10px;
+  border: solid #000 1px;
+  font-size: 20px;
+}
+
+.input-testo button:hover{
+  background-color: #0aa311;
+  color: #fff;
+}
+
+
+.form{
+  background-color: #fff;
+}
+
+
+.footerr{
+  width: 100%;
+  background-color: #ffffff;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  z-index: 11;
+  top: 1600px;
+}
+
+.instagram{
+height: 50px;
+width: 50px;
+padding: 5px;
+left: 920px;
+position: absolute;
+}
+
+.whatsapp{
+height: 50px;
+width: 50px;
+padding: 5px;
+left: 980px;
+position: absolute;
+}
+
+.footerr h1{
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 5px;
+  left: 850px;
+  position: absolute;
+}
+
+
+
+
+.footer{
+  height: 150px;
+  width: 100%;
+  background-color: #111;
+  position: absolute;
+  top: 1600px;
+
+}
+
+.footer p{
+  color:#fff;
+  font-size: 15px;
+  top:35px;
+  position: absolute;
+  left: 1100px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.footer p a{
+  color:#fff;
+  font-size: 15px;
+  position: absolute;
+  font-family: 'Ubuntu', sans-serif;
+}
+.footer h1{
+  color:#fff;
+  font-size: 15px;
+  top: 60px;
+  position: absolute;
+  font-family: 'Ubuntu', sans-serif;
+  left:680px;
+}
+
+.footerr{
+  height: 150px;
+  width: 100%;
+  background-color: #111;
+  position: absolute;
+  top: 1000px;
+
+}
+.footerr p{
+  color:#fff;
+  font-size: 15px;
+  top:35px;
+  position: absolute;
+  left: 1100px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.footerr p a{
+  color:#fff;
+  font-size: 15px;
+  position: absolute;
+  font-family: 'Ubuntu', sans-serif;
+}
+.footerr h1{
+  color:#fff;
+  font-size: 15px;
+  top: 60px;
+  position: absolute;
+  font-family: 'Ubuntu', sans-serif;
+  left:680px;
+}
+
+.su i{
+   color: #595f6e;
+   font-size:50px ;
+   float: right;
+   position: absolute;
+   z-index: 11;
+   display: block;
+   top: 1500px;
+   left: 1830px;
+}
+.su i:hover{
+  color: #0aa311;
+}
+
+
+/*Chi sono*/
+
+.presentazioni{
+  display: block;
+  position: absolute;
+  top: 160px;
+  left: 100px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  color: #111;
+}
+.presentazioni span{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 45px;
+  color: #111;
+}
+
+.collezionee{
+font-family: 'Ubuntu', sans-serif;
+position: absolute;
+display: inline-grid;
+background-color: #0aa311;
+height: 200px;
+width:100%;
+left: 0px;
+top: 430px;
+background-image: url('cover.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+z-index: 1;
+}
+
+
+.sfumaturaa{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(10, 163, 17, 0.4);
+  z-index: 1;
+}
+
+.foto img{
+  height: 100%;
+  width: 100%;
+}
+
+.foto{
+  display: block;
+  position: absolute;
+  top: 130px;
+  left: 1250px;
+  height: 500px;
+  width: 400px;
+  z-index: 2;
+}
+
+.social{
+  position: absolute;
+  display: flex;
+  top: 650px;
+  left: 880px;
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  z-index: 2;
+}
+
+.instagramm{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  padding-left: 10px;
+}
+
+.whatsappp{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  left: 305px;
+}
+
+
+
+/*SWUP*/
+.transition-fade{
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+/*CLEARFIX*/
+.clearfix{
+  clear: both;
+}
